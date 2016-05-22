@@ -390,7 +390,7 @@ exports.savePrice = function(callback){
                                     cho_new_el : obj[3].data[i][27]*10000,
                                     cho_mnp_el : obj[3].data[i][28]*10000, 
                                     cho_chn_el : obj[3].data[i][29]*10000,
-                                
+                                }
                             );
                         }
                     }
