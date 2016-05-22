@@ -7,8 +7,7 @@ angular.module('myApp', ['ui.router'])
         $stateProvider
             .state('MainPage', {
                 url: "/MainPage",
-                templateUrl: "/views/state/MainPage/MainPage.html",
-                controller: 'MainPageController'
+                templateUrl: "/views/state/MainPage/MainPage.html"
             })
             .state('CustomerCreate', {
                 url: "/CustomerCreate",
