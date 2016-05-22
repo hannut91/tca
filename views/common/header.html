@@ -1,0 +1,33 @@
+<!--<div class="pageHeader" ng-controller="headerCtrl">
+  <span><a href="/">DreamTCA<a/></span>
+  <ul class="navBtn" >
+      <li><a ui-sref="main">메인</a></li> 
+      <li><a href="" ng-click="gotoAnchor(0)">텔킷</a></li> 
+      <li><a href="" ng-click="gotoAnchor(1)">네이버 카페</a></li> 
+      <li><a href="" ng-click="gotoAnchor(2)">출고이동</a></li>
+      <li><a href="" ng-click="gotoAnchor(3)">개통처리</a></li>
+      <li><a href="" ng-click="gotoAnchor(4)">재고상세조회</a></li>
+      <li><a ui-sref="quickCall">퀵 부르기</a></li>
+      <li><a ui-sref="quickConfirm">퀵 확인하기</a></li>
+      <li><a ui-sref="usimCall">유심 신청하기</a></li>
+      <li><a href="/logout">로그아웃</a></li>
+  </ul>
+</div>-->
+<div class="row h60px w100p bg-black space-between fixed">
+    <div ng-class="{'color-gray':temp}" ng-mouseover="temp=true" ng-mouseleave="temp=false"  class="col center color-white cursor ft32px ml2p" ui-sref="MainPage">
+        DreamTCA
+    </div>
+    <div ng-class="{'color-gray':temp1}" ng-mouseover="temp1=true" ng-mouseleave="temp1=false"  class="col center w50p"></div>
+    <div ng-class="{'color-gray':temp2}" ng-mouseover="temp2=true" ng-mouseleave="temp2=false"  class="col center color-white cursor" ui-sref="quickCall">
+        퀵 부르기
+    </div>
+    <div ng-class="{'color-gray':temp3}" ng-mouseover="temp3=true" ng-mouseleave="temp3=false"  class="col center color-white cursor" ui-sref="quickConfirm">
+        퀵 확인하기
+    </div>
+    <div ng-class="{'color-gray':temp4}" ng-mouseover="temp4=true" ng-mouseleave="temp4=false"  class="col center color-white cursor" ui-sref="usimCall">
+        유심 신청하기
+    </div>
+    <div ng-class="{'color-gray':temp5}" ng-mouseover="temp5=true" ng-mouseleave="temp5=false"  class="col center color-white cursor mr2p">
+        <a href="/logout">로그아웃</a>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<table ng-controller="sk_aceController" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th rowspan="2">모델명</th>
+            <th colspan="3">공시지원금 59이상</th>
+            <th colspan="3">공시지원금 51이상</th>
+            <th colspan="3">공시지원금 36이상</th>
+            <th colspan="3">공시지원금 그외 요금제</th>
+            <th colspan="3">선택약정 59이상</th>
+            <th colspan="3">선택약정 51이상</th>
+            <th colspan="3">선택약정 36이상</th>
+            <th colspan="3">선택약정 그외 요금제</th>
+        </tr>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+    </thead>
+    <tbody ng-repeat="price in pricelist">
+        <td>{{price.model}}</td>
+        <td>{{price.ofc_new_59}}</td>
+        <td>{{price.ofc_mnp_59}}</td>
+        <td>{{price.ofc_chn_59}}</td>
+        <td>{{price.ofc_new_51}}</td>
+        <td>{{price.ofc_mnp_51}}</td>
+        <td>{{price.ofc_chn_51}}</td>
+        <td>{{price.ofc_new_36}}</td>
+        <td>{{price.ofc_mnp_36}}</td>
+        <td>{{price.ofc_chn_36}}</td>
+        <td>{{price.ofc_new_el}}</td>
+        <td>{{price.ofc_mnp_el}}</td>
+        <td>{{price.ofc_chn_el}}</td>
+        <td>{{price.cho_new_59}}</td>
+        <td>{{price.cho_mnp_59}}</td>
+        <td>{{price.cho_chn_59}}</td>
+        <td>{{price.cho_new_51}}</td>
+        <td>{{price.cho_mnp_51}}</td>
+        <td>{{price.cho_chn_51}}</td>
+        <td>{{price.cho_new_36}}</td>
+        <td>{{price.cho_mnp_36}}</td>
+        <td>{{price.cho_chn_36}}</td>
+        <td>{{price.cho_new_el}}</td>
+        <td>{{price.cho_mnp_el}}</td>
+        <td>{{price.cho_chn_el}}</td>
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+<div style="height:60px;width:100%"></div>
+<form action="/fileUpload" method="POST" enctype="multipart/form-data">
+    <select name="accountName" class="form-control" required>
+        <option value="">선택</option>
+        <option value="sk_ps">SK PS</option>
+        <option value="sk_ace">SK 에이스</option>
+        <option value="kt_mir">KT 미르</option>
+        <option value="kt_cod">KT COD</option>
+        <option value="kt_kwangjin">KT 광진</option>
+        <option value="kt_seocho">KT 서초</option>
+        <option value="lg_dream">LG 드림</option>
+        <option value="lg_sungbook">LG 성북</option>
+        <option value="lg_seocho">LG 서초</option>
+        <option value="lg_kwangjin">LG 광진</option>
+    </select>
+    <input type="file" name="uploadFile" required/>
+    <input type="submit" name="Upload">
+</form>

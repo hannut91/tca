@@ -1,0 +1,94 @@
+/* Common Style */
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+.space-between{
+    justify-content: space-between;
+}
+.center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.col{
+    display:flex;
+    flex-direction: column;
+}
+.p0px{
+    padding:0px;
+}
+.p2p{
+    padding:2%;
+}
+.pl2p{
+    padding-left:2%;
+} 
+.pr2p{
+    padding-right:2%;
+}
+.m0px{
+    margin:0px;
+}
+.h60px{
+    height: 60px;
+}
+.w50p{
+    width:50%;
+}
+.w100p{
+    width:100%
+}
+.ft32px{
+    font-size:32px
+}
+.fixed{
+    position:fixed;
+}
+.ml2p{
+    margin-left:2%;
+}
+.mr2p{
+    margin-right:2%;
+}
+/* mainpage.html */
+.mainButton{
+    padding:0px;
+    color:white;
+    width:110px;
+    height:110px;
+    word-break: keep-all;
+}
+.bg-blue{
+    background-color:rgb(0,114,198);
+}
+.bg-orange{
+    background-color:rgb(210,71,38);
+}
+.bg-purple{
+    background-color:rgb(128,57,123);
+}
+.bg-green{
+    background-color:rgb(0,130,114);   
+}
+.bg-black{
+    background-color:black;
+}
+.color-white{
+    color:white;
+}
+.color-gray{
+    color:#e8e8e8;
+}
+.cursor{
+    cursor:pointer;
+}
+.text-align-center{
+    text-align: center
+}
+
+/* customerreg.html */
+
+/* Header */

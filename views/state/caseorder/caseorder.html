@@ -1,0 +1,70 @@
+<div style="height:50px;width:100%"></div>
+
+<form ng-submit="orderSubmit()">
+    <h3 class="text-center">주문자 정보</h3>
+    <section>
+        <div class="form-group">
+            <label for="orderDate">주문날짜</label>
+            <input ng-model="orderDate"type="date" class="form-control" id="orderDate" required>
+        </div>
+        <div class="form-group">
+            <label for="ordererName">주문자 이름</label>
+            <input ng-model="orderName" type="text" class="form-control" id="ordererName" placeholder="주문자 이름" required>
+        </div>
+        <div class="form-group">
+            <label for="ordererTel">번호</label>
+            <input ng-model="orderTel" type="tel" class="form-control" id="ordererTel" placeholder="번호" maxlength="11" required>
+        </div>
+    </section>
+    <h3 class="text-center">상세 주문</h3>
+    <seciton ng-repeat="or in orderList">
+        <div class="form-group">
+            <label for="orderModel">기기 모델명</label>
+            <input ng-model="or.orderModel" type="text" class="form-control" id="orderModel" placeholder="기기 모델명" required>
+        </div>
+        <div class="form-group">
+            <label for="caseType">케이스 유형</label>
+            <input ng-model="or.orderType" type="text" class="form-control"  id="caseType" placeholder="다이어리, 범퍼, 젤리" required>
+        </div>
+        <div class="form-group">
+            <label for="caseColor">케이스 색상</label>
+            <input ng-model="or.orderColor" type="text" class="form-control" id="caseColor" placeholder="검정, 파랑, 빨강, 분홍" required>
+        </div>
+        <div ng-init="or.orderNum = 1">
+            <h4>개수</h4>
+            <label class="radio-inline">
+                <input ng-model="or.orderNum" type="radio" value="1" /> 1
+            </label>
+            <label class="radio-inline">
+                <input ng-model="or.orderNum" type="radio" value="2" /> 2
+            </label>
+            <label class="radio-inline">
+                <input ng-model="or.orderNum" type="radio" value="3" /> 3
+            </label>
+            <label class="radio-inline">
+                <input ng-model="or.orderNum" type="radio" value="4" /> 4
+            </label>
+        </div>
+        <div class="text-center" ng-if="$last">
+            <input class="text-center" type="button" value="추가" ng-click="orderAppend()">
+        </div>
+        <div class="text-center" ng-if="$last && !$first">
+            <input class="text-center" type="button" value="제거" ng-click="orderRemove()">
+        </div>
+    </seciton>
+    <h3 class="text-center">주소</h3>
+    <section ng-if="addressShow">
+        <div class="form-group">
+            <label for="orderAddr">주소</label>
+            <input ng-model="$parent.orderAddr" type="text" class="form-control" id="orderAddr" placeholder="배송받을 주소" required>
+        </div>
+    </section>
+    <div class="text-center" ng-show="!addressShow">
+        <input class="text-center" type="button" value="추가" ng-click="addressShow = !addressShow">
+    </div>
+    <div class="text-center" ng-show="addressShow">
+        <input class="text-center" type="button" value="제거" ng-click='addressShow = !addressShow;orderAddr=undefined'>
+    </div>
+    <br>
+    <input type="submit" value="등록">
+</form>

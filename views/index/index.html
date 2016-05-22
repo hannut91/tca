@@ -1,0 +1,39 @@
+<html ng-app="myApp" style="height:100%">
+<head>
+    <title>DreamTCA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+    <link rel="stylesheet" type="text/css" href="/static/css/common_small.css" media="screen and (max-width:1023px)" />
+    <link rel="stylesheet" type="text/css" href="/static/css/common_1024.css" media="screen and (min-width:1024px)" />
+    
+</head>
+
+<body class="m0px">
+    <header ng-include="'/views/common/header.html'"></header>
+    <div ui-view style="height:100%"></div>
+    <script src="/static/js/angular.min.js"></script>
+    <script src="/static/js/angular-ui-router.js"></script>
+    <script src="/static/js/my_app.js"></script>
+    <sciprt src="/views/state/CustomerCreate/CustomerCreateController.js"></sciprt>
+    <sciprt src="/views/state/CustomerCreate/CustomerCreateModel.js"></sciprt>
+    <script src="/views/state/customerlist/customerlistController.js"></script>
+    <script src="/views/state/caseorder/caseorderController.js"></script>
+    <script src="/views/state/orderlist/orderlistController.js"></script>
+    <script src="/views/state/mainpage/mainpageModel.js"></script>
+    <script src="/views/state/mainpage/mainpageController.js"></script>
+    <script src="/views/state/pricetable/pricetableController.js"></script>
+    <script src="/views/state/pricetable/PriceTableModel.js"></script>
+    <script src="/views/state/pricetable/state/totalprice/totalpriceController.js"></script>
+    <script src="/views/state/pricetable/state/totalprice/totalpriceModel.js"></script>
+    <script src="/views/state/pricetable/state/sk_ps/sk_psController.js"></script>
+    <script src="/views/state/pricetable/state/sk_ace/sk_aceController.js"></script>
+    <script src="/views/state/pricetable/state/kt_mir/kt_mirController.js"></script>
+    <script src="/views/state/pricetable/state/kt_cod/kt_codController.js"></script>
+    <script src="/views/state/pricetable/state/kt_kwangjin/kt_kwangjinController.js"></script>
+    <script src="/views/state/pricetable/state/kt_seocho/kt_seochoController.js"></script>
+    <script src="/views/state/pricetable/state/lg_dream/lg_dreamController.js"></script>
+    <script src="/views/state/pricetable/state/lg_sungbook/lg_sungbookController.js"></script>
+    <script src="/views/state/pricetable/state/lg_kwangjin/lg_kwangjinController.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+    "name":"customercare",
+    "version":"0.0.0",
+    "author":"Yoonsuk Han <hannut91@gmail.com>",
+    "description":"Webapp for cutomer care",
+    "cotributors":[{"name":"yoonsuk","email":"hannut91@gmail.com"}],
+    "main":"server.js",
+    "dependencies":{
+        "express":"*",
+        "ejs":"*",
+        "mongodb":"*",
+        "mongoose":"*",
+        "connect-mongo":"*",
+        "body-parser":"*",
+        "cookie-parser":"*",
+        "express-session":"*",
+        "angular-ui-router":"*"
+    }
+
+}

@@ -1,0 +1,66 @@
+<table ng-controller="kt_mirController" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th rowspan="2">모델명</th>
+            <th colspan="3">공시지원금 61이상</th>
+            <th colspan="3">공시지원금 51이상</th>
+            <th colspan="3">공시지원금 청소년34이상 </th>
+            <th colspan="3">공시지원금 28이상</th>
+            <th colspan="3">선택약정 61이상</th>
+            <th colspan="3">선택약정 51이상</th>
+            <th colspan="3">선택약정 청소년34이상</th>
+            <th colspan="3">선택약정 28이상</th>
+        </tr>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+    </thead>
+    <tbody ng-repeat="price in pricelist">
+        <td>{{price.model}}</td>
+        <td>{{price.ofc_new_61}}</td>
+        <td>{{price.ofc_mnp_61}}</td>
+        <td>{{price.ofc_chn_61}}</td>
+        <td>{{price.ofc_new_51}}</td>
+        <td>{{price.ofc_mnp_51}}</td>
+        <td>{{price.ofc_chn_51}}</td>
+        <td>{{price.ofc_new_t34}}</td>
+        <td>{{price.ofc_mnp_t34}}</td>
+        <td>{{price.ofc_chn_t34}}</td>
+        <td>{{price.ofc_new_28}}</td>
+        <td>{{price.ofc_mnp_28}}</td>
+        <td>{{price.ofc_chn_28}}</td>
+        <td>{{price.cho_new_61}}</td>
+        <td>{{price.cho_mnp_61}}</td>
+        <td>{{price.cho_chn_61}}</td>
+        <td>{{price.cho_new_51}}</td>
+        <td>{{price.cho_mnp_51}}</td>
+        <td>{{price.cho_chn_51}}</td>
+        <td>{{price.cho_new_t34}}</td>
+        <td>{{price.cho_mnp_t34}}</td>
+        <td>{{price.cho_chn_t34}}</td>
+        <td>{{price.cho_new_28}}</td>
+        <td>{{price.cho_mnp_28}}</td>
+        <td>{{price.cho_chn_28}}</td>
+    </tbody>
+</table>

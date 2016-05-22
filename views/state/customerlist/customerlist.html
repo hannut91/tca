@@ -1,0 +1,21 @@
+<div style="height:60px;width:100%"></div>
+<table ng-controller="customerlistCtrl" class="table table-bordered table-hover">
+    <thead>
+        <th>고객명</th>
+        <th>번호</th>
+        <th>개통날짜</th>
+        <th>모델명</th>
+        <th>통신사</th>
+        <th>개통처{{customerInfo.customername}}</th>
+    </thead>
+    <tbody ng-repeat="customList in customerInfo">
+        <td>{{customList.customername}}</td>
+        <td>{{customList.phonenum}}</td>
+        <td>{{customList.newdate}}</td>
+        <td>{{customList.device}}</td>
+        <td>{{customList.company}}</td>
+        <td>{{customList.account}}</td>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>

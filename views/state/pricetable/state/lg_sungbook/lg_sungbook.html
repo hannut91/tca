@@ -1,0 +1,45 @@
+<table ng-controller="lg_sungbookController" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th rowspan="2">모델명</th>
+            <th colspan="3">공시지원금 89이상</th>
+            <th colspan="3">공시지원금 59이상</th>
+            <th colspan="3">공시지원금 46이상</th>
+            <th colspan="3">공시지원금 청소년29이상</th>
+            <th colspan="3">공시지원금 29이상</th>
+        </tr>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+        <th>010</th>
+        <th>MNP</th>
+        <th>기변</th>
+    </thead>
+    <tbody ng-repeat="price in pricelist">
+        <td>{{price.model}}</td>
+        <td>{{price.ofc_new_89}}</td>
+        <td>{{price.ofc_mnp_89}}</td>
+        <td>{{price.ofc_chn_89}}</td>
+        <td>{{price.ofc_new_59}}</td>
+        <td>{{price.ofc_mnp_59}}</td>
+        <td>{{price.ofc_chn_59}}</td>
+        <td>{{price.ofc_new_46}}</td>
+        <td>{{price.ofc_mnp_46}}</td>
+        <td>{{price.ofc_chn_46}}</td>
+        <td>{{price.ofc_new_t29}}</td>
+        <td>{{price.ofc_mnp_t29}}</td>
+        <td>{{price.ofc_chn_t29}}</td>
+        <td>{{price.ofc_new_29}}</td>
+        <td>{{price.ofc_mnp_29}}</td>
+        <td>{{price.ofc_chn_29}}</td>
+    </tbody>
+</table>
