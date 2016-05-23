@@ -897,7 +897,7 @@ exports.savePrice = function(callback){
                 }
                 else{
                     var obj = excel.parse(LG_SUNGBOOK_PATH);
-                    for (var i = 25;i<60;i++){
+                    for (var i = 25;i<57;i++){
                         var modelname = device_change(obj[0].data[i][3].replace(/\s/g,""));
                         if(modelname==undefined){
                             console.log("LG_SUNGBOOK 모델명이 없습니다 : "+obj[0].data[i][3]);
